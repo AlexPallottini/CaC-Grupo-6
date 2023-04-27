@@ -26,7 +26,7 @@ function validateForm()
     }
 
     //Do here 3rd API email sending in case of wanting to.
-    if(checkbox.checked)
+    if(checkbox.checked && errorCount <= 0)
     {
         //Send email
         alert("Email de confirmación enviado.");

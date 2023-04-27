@@ -22,6 +22,7 @@ body
     margin: 0;
     padding: 0;
     display: grid;
+    /*REF: https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/ */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-gap: 3em;
 }
@@ -44,38 +45,26 @@ body
     background-color: lightgray;
 }
 
-/*
-.product-container
+.product-item
 {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+}
+.product-item:hover
+{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    background-color: rgba(0.75, 0.75, 0.75, 0.5);
 }
 
-.product-box
-{
-    background-color: red;
-    border: 0.25em black dashed;
-    margin: 0.25em;
-    width: 25%;
-}
 
-.product-text
-{
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-}
-
-.product-image
-{
-    width: 10em;
-    height: 10em;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-} */
 
 .top-nav
 {
