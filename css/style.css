@@ -174,9 +174,130 @@ footer
 
 /*#region AboutUs*/
 
-.contact-iframe
+.aboutus-main-body
 {
-    margin-top: 3em;
+    text-align: center;
+}
+
+.aboutus-main-body h1
+{
+    font-size: 3em;
+}
+
+.aboutus-iframe
+{
+    margin-top: 10%;
+}
+
+.aboutus-iframe iframe
+{
+    transition: .5s;
+
+    border: 5px solid black;
+    margin: 2em;
+    width: 40em;
+    height: 30em;
+}
+
+.aboutus-iframe iframe:hover
+{
+    transition: .5s;
+
+    box-shadow: 0px 0px 40px 20px black;
+}
+
+.aboutus-question
+{
+    margin: 2em;
+}
+
+.aboutus-question p
+{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    font-size: 1em;
+
+    text-decoration: none;
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+}
+
+.aboutus-question h2
+{
+    
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    font-size: 1.5em;
+
+    text-decoration: underline;
+}
+
+.aboutus-question:hover h2
+{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    font-size: 3em;
+}
+.aboutus-question:hover p
+{
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+
+    font-size: 2em;
+
+    text-decoration: underline;
+
+    
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.aboutus-socials
+{
+    background-color:  rgba(0.75, 0.75, 0.75, 0.5);
+}
+
+.aboutus-socials ul
+{
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.aboutus-socials img
+{
+    transition: .5s;
+}
+
+.aboutus-socials img:hover
+{
+    transition: .5s;
+
+    /*Ref: https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css */
+    -webkit-filter: drop-shadow(0px 0px 10px #fff);
+    filter: drop-shadow(0px 0px 10px white); 
 }
 
 /*#endregion*/
