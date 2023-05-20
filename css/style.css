@@ -84,6 +84,7 @@ footer
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition:.5s;
+    font-family: 'Poppins', sans-serif;
     
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -94,6 +95,7 @@ footer
 {
     white-space: normal;
     overflow-wrap: break-word;
+    font-family: 'Poppins', sans-serif;
 }
 
 .product-item:hover
@@ -177,6 +179,7 @@ footer
 .aboutus-main-body
 {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 .aboutus-main-body h1
