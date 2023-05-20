@@ -27,6 +27,11 @@ footer
 
 /*#region Form*/
 
+#carouselBodegas {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
 .form-control::placeholder
 {
     color: rgba(1,1,1, 0.5);
