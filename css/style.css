@@ -23,19 +23,26 @@ footer
     font-family: 'Poppins', sans-serif;
     font-size: 0.75em;
 }
-/*#endregion*/
-
-/*#region Form*/
 
 #carouselBodegas {
     margin-left: 5%;
     margin-right: 5%;
   }
 
+/*#endregion*/
+
+/*#region Form*/
+
 .form-control::placeholder
 {
     color: rgba(1,1,1, 0.5);
 }
+
+#ContContacto {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
 /*#endregion*/
 
 /*#region Products*/
