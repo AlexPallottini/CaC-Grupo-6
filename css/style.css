@@ -4,11 +4,12 @@
 
 body
 {
+    /*Color pallete grabbed from adobe colo wheel, with tríad config and #A8875A as base color*/
+
     margin: 0;
     padding: 0;
-    color: white;
-    background-color: rgb(100, 100, 100);
-    
+    color: rgb(168, 135, 90);
+    background-color: rgb(250,250,250);
 }
 
 footer
@@ -36,7 +37,7 @@ footer
 #ContContacto {
     margin-left: 5%;
     margin-right: 5%;
-  }
+}
 
 /*#endregion*/
 
@@ -64,6 +65,16 @@ footer
     grid-gap: 3em;
 }
 
+.product-unordered-list:hover > .product-item
+{
+    opacity: 0.5;
+}
+
+.product-unordered-list:hover > .product-item:hover
+{
+    opacity: 1;
+}
+
 .product-unordered-list li
 {
     text-align: center;
@@ -81,15 +92,12 @@ footer
     text-decoration: underline;
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
-    background-color: rgb(20, 20, 20);
+    background-color: rgba(168,135,90, 0.5);
+    border: 1px solid black;
 }
 
 .product-item
 {
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition:.5s;
     font-family: 'Poppins', sans-serif;
     
@@ -107,20 +115,17 @@ footer
 
 .product-item:hover
 {
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition:.5s;
-    
-    background-color: rgba(0.75, 0.75, 0.75, 0.5);
-    border: 0.25em solid black;
+
+    background-color: #422D5C;
 
     white-space: normal;
     overflow-wrap: break-word;
     
     margin: -10%;
     padding: 10%;
+
+    box-shadow: 0px 0px 1em 1em rgba(0.75, 0.75, 0.75, 0.5);
 }
 
 /*#endregion*/
@@ -128,7 +133,7 @@ footer
 /*#region Top-Nav Bar*/
 .top-nav
 {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     display: flex;
     justify-content: space-around;
     font-family: 'Poppins', sans-serif;
@@ -140,7 +145,7 @@ footer
     width:100%;
     height:100%;
 
-    color: white;
+    color: black;
     text-align: center;
     padding: 1em 1em;
 
@@ -150,12 +155,18 @@ footer
 .top-nav a:hover
 {
     transition: background-color 0.25s ease-in-out;
-    background-color: blue;
+    background-color: #5C4628;
+    color: rgb(168, 135, 90);
 }
 
 .top-nav-active
 {
-    background-color: blue;
+    background-color: rgb(168, 135, 90);
+}
+
+.top-nav-active a
+{
+    color: rgb(168, 135, 90);
 }
 
 /*#endregion*/
@@ -166,6 +177,7 @@ footer
 {
     text-align: center;
     font-family: 'Poppins', sans-serif;
+    padding-bottom: 5%;
 }
 
 .index-body-main h1
@@ -177,6 +189,34 @@ footer
 {
     font-size: 2em;
     text-decoration: underline;
+}
+
+.index-body-main img
+{
+    max-width: 100%;
+    height: auto;
+    width: auto\9;
+}
+
+.index-starting ol
+{
+    text-align: center;
+    list-style-position: inside;
+    text-decoration: underline;
+}
+
+.index-starting ol li
+{
+    padding: 2%;
+}
+
+.index-starting ol a:link, .index-starting ol a:visited
+{
+    color: black;
+}
+.index-starting ol a:hover
+{
+    color: darkred;
 }
 
 /*#endregion*/
@@ -221,15 +261,19 @@ footer
     margin: 2em;
 }
 
-.aboutus-question p
+.aboutus-question:hover
 {
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition:.5s;
 
-    font-size: 1em;
+    box-shadow: 0px 0px 25px 40px rgba(66, 45, 92, 1);
+    background-color: rgba(66, 45, 92, 1);
+}
+
+.aboutus-question p
+{
+    transition:.5s;
+
+    font-size: 1.2em;
 
     text-decoration: none;
 
@@ -240,48 +284,22 @@ footer
 
 .aboutus-question h2
 {
-    
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition:.5s;
-
-    font-size: 1.5em;
 
     text-decoration: underline;
 }
 
-.aboutus-question:hover h2
-{
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-
-    font-size: 3em;
-}
 .aboutus-question:hover p
 {
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
     transition:.5s;
-
-    font-size: 2em;
 
     text-decoration: underline;
 
-    
-    margin-top: 5%;
-    margin-bottom: 5%;
 }
 
 .aboutus-socials
 {
-    background-color:  rgba(0.75, 0.75, 0.75, 0.5);
+    background-color:  rgba(0.75, 0.75, 0.75, 0.25);
 }
 
 .aboutus-socials ul
@@ -306,8 +324,21 @@ footer
     transition: .5s;
 
     /*Ref: https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css */
-    -webkit-filter: drop-shadow(0px 0px 10px #fff);
-    filter: drop-shadow(0px 0px 10px white); 
+    -webkit-filter: drop-shadow(0px 0px 15px var(--shadow-color));
+    filter: drop-shadow(0px 0px 15px var(--shadow-color)); 
+}
+
+.aboutus-socials #whatsapp-social
+{
+    --shadow-color: #25D366;
+}
+.aboutus-socials #twitter-social
+{
+    --shadow-color: #00acee;
+}
+.aboutus-socials #instagram-social
+{
+    --shadow-color: #E1306C;
 }
 
 /*#endregion*/
@@ -348,7 +379,6 @@ footer
     .product-header
     {
         font-size: 1em;
-        color: rgba(255, 255, 255, 0.5);
         text-decoration: none;
     }
 
