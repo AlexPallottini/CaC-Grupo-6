@@ -245,8 +245,8 @@ footer
 
     border: 5px solid black;
     margin: 2em;
-    width: 40em;
-    height: 30em;
+    width: 50vw;
+    height: 50vh;
 }
 
 .aboutus-iframe iframe:hover
