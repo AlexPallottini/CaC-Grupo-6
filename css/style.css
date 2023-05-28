@@ -4,7 +4,7 @@
 
 body
 {
-    /*Color pallete grabbed from adobe colo wheel, with tríad config and #A8875A as base color*/
+    /*Color pallete grabbed from adobe color wheel, with tríad config and #A8875A as base color*/
 
     margin: 0;
     padding: 0;
@@ -18,11 +18,12 @@ footer
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.25);
-    color: rgba(255, 255, 255, 1);
+    background-color: rgba(168, 135, 90, 0.25);
+    color: #5C4628;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 0.75em;
+    border-top: 1px solid  rgb(168, 135, 90);
 }
 
 /*#endregion*/
@@ -34,9 +35,45 @@ footer
     color: rgba(1,1,1, 0.5);
 }
 
+.contactForm
+{
+    font-family: 'Poppins', sans-serif;
+}
+
+#contactEmail
+{
+    color: #A8875A;
+}
+
 #ContContacto {
     margin-left: 5%;
     margin-right: 5%;
+}
+
+#flexCheckChecked:checked
+{
+    background-color: #A8875A;
+}
+
+#submit-button
+{
+    font-size: 1.2em;
+    border-radius: 10px;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #5C4628;
+    color: #A8875A;
+}
+
+#submit-button:hover
+{
+    background-color: rgba(168, 135, 90, 0.25);
+}
+
+#submit-button:active
+{
+    background-color: rgba(92, 70, 40, 0.5);
 }
 
 /*#endregion*/
@@ -93,7 +130,7 @@ footer
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
     background-color: rgba(168,135,90, 0.5);
-    border: 1px solid black;
+    border-bottom: 2px solid  rgb(168, 135, 90);;
 }
 
 .product-item
@@ -145,11 +182,13 @@ footer
     width:100%;
     height:100%;
 
-    color: black;
+    color: #5C4628;
     text-align: center;
     padding: 1em 1em;
 
     text-decoration: none;
+
+    border-bottom: 1px solid #5C4628;;
 }
 
 .top-nav a:hover
@@ -243,7 +282,7 @@ footer
 {
     transition: .5s;
 
-    border: 5px solid black;
+    border: 5px solid #A8875A;
     margin: 2em;
     width: 50vw;
     height: 50vh;
@@ -253,7 +292,7 @@ footer
 {
     transition: .5s;
 
-    box-shadow: 0px 0px 40px 20px black;
+    box-shadow: 0px 0px 40px 20px #5C4628;
 }
 
 .aboutus-question
@@ -299,7 +338,10 @@ footer
 
 .aboutus-socials
 {
-    background-color:  rgba(0.75, 0.75, 0.75, 0.25);
+    background-color: rgba(168, 135, 90, 0.25);
+    margin-bottom: 2.6em;
+    border-bottom: 1px solid  rgb(168, 135, 90);
+    border-top: 1px solid  rgb(168, 135, 90);
 }
 
 .aboutus-socials ul
@@ -317,15 +359,17 @@ footer
 .aboutus-socials img
 {
     transition: .5s;
+    /*Ref: https://codepen.io/sosuke/pen/Pjoqqp*/
+    filter: invert(51%) sepia(60%) saturate(275%) hue-rotate(355deg) brightness(95%) contrast(89%);
 }
 
 .aboutus-socials img:hover
 {
     transition: .5s;
-
+    
     /*Ref: https://stackoverflow.com/questions/3186688/drop-shadow-for-png-image-in-css */
-    -webkit-filter: drop-shadow(0px 0px 15px var(--shadow-color));
-    filter: drop-shadow(0px 0px 15px var(--shadow-color)); 
+    -webkit-filter: invert(51%) sepia(60%) saturate(275%) hue-rotate(355deg) brightness(95%) contrast(89%) drop-shadow(0px 0px 15px var(--shadow-color));
+    filter: invert(51%) sepia(60%) saturate(275%) hue-rotate(355deg) brightness(95%) contrast(89%) drop-shadow(0px 0px 15px var(--shadow-color)); 
 }
 
 .aboutus-socials #whatsapp-social
